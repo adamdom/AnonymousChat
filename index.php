@@ -84,7 +84,9 @@
 			if(document.getElementById("groupCode").value > 9999 && document.getElementById("groupCode").value < 1000000)
 			{
 				code = document.getElementById("groupCode").value;
-				document.getElementById("linkToShare").value = "http://localhost/pennlabs/index.php?" + (document.getElementById("groupCode").value).toString();
+				document.getElementById("linkToShare").value = "http://localhost/pennlabs/index.php?" + (document.getElementById("groupCode").value).toString();		
+				var url = "http://localhost/pennlabs/index.php?" + (document.getElementById("groupCode").value).toString();
+				window.location = url;
 				document.getElementById("groupCode").value = "";
 			}
 			
